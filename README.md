@@ -1,4 +1,4 @@
-Creating a GitHub README file for the provided code involves explaining the purpose of the code, how it works, and any potential ethical concerns, since this code logs IP addresses and other personal data, which could be a privacy violation. Here's an example README file:
+
 
 ---
 
